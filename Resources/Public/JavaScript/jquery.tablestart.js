@@ -15,6 +15,13 @@ jQuery(document).ready(function($) {
 			    $(".marked").removeClass("marked");
 			    $(this).addClass("marked");
 		 });
+		 
+		 $('p').each(function() {
+ 			var $this = $(this);
+ 			if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
+				$this.remove(); 
+			});
+
 	    
      }
   
