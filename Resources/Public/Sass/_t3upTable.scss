@@ -9,8 +9,8 @@
 }
    
 .ce-table  {                                                      width: 100%; max-width: 100%; 
-    td                                                            {padding: 5px 5px 5px 15px; vertical-align: top; border-top: 1px solid $tableLineColor; }
-    th                                                            {padding: 5px 5px 5px 15px; vertical-align: top; border-top: 1px solid $tableHeaderLineColor; } 
+    td                                                            {padding: $v1 $v1 $v1 $v3; vertical-align: top; border-top: 1px solid $tableLineColor; }
+    th                                                            {padding: $v1 $v1 $v1 $v3; vertical-align: top; border-top: 1px solid $tableHeaderLineColor; } 
     th                                                            {background-color: $tableHeader; color: $tableHeaderColor; }          
     label                                                         {margin-bottom: 0;}
     p                                                             {margin: 0;}   
@@ -27,7 +27,7 @@
 
    /* Layouts */
 
-   .ce-table-stripe tbody tr:nth-of-type(even) td                 {background-color: rgba(120,120,120,.2);}
+   .ce-table-stripe tbody tr:nth-of-type(even) td                 {background-color: rgba($gray-400,.2);}
    
    .ce-table-colorstripe tbody tr:nth-of-type(even) td            {background-color: saturate(rgba($baseColor,.2),10%);}   
    .ce-table-colorstripe th,
@@ -40,8 +40,8 @@
    .ce-table-bordered td:first-of-type                            {border-left: 1px solid $tableLineColor}  
    .ce-table-bordered tr:last-of-type td                          {border-bottom: 1px solid $tableLineColor;} 
    
-   .ce-table-noline td                                            {border: 0 !important; padding: 5px 0; }
-   .ce-table-noline thead th                                      {padding: 5px 0; vertical-align: top; border-top: 0; border-bottom: 1px solid $tableLineColor; color: #333; background-color: transparent;  } 
+   .ce-table-noline td                                            {border: 0 !important; padding: $v1 0; }
+   .ce-table-noline thead th                                      {padding: $v1 0; vertical-align: top; border-top: 0; border-bottom: 1px solid $tableLineColor; color: #333; background-color: transparent;  } 
 
    .ce-table-stripe tr:last-of-type td                            {border: 0 !important;} 
    .ce-table-colorstripe tr:last-of-type td                       {border: 0 !important;} 
@@ -53,103 +53,85 @@
 
   /* Fixed Layoutssets */
   
-  .frame-type-table.frame-layout-1001  td:first-of-type     {width: 10%}
-  .frame-type-table.frame-layout-1001  td:last-of-type      {width: 90%}
+  .frame-layout-1001  td:first-of-type     {width: 10%}
+  .frame-layout-1001  td:last-of-type      {width: 90%}
   
-  .frame-type-table.frame-layout-1002  td:first-of-type     {width: 20%}
-  .frame-type-table.frame-layout-1002  td:last-of-type      {width: 80%}
+  .frame-layout-1002  td:first-of-type     {width: 20%}
+  .frame-layout-1002  td:last-of-type      {width: 80%}
   
-  .frame-type-table.frame-layout-1003  td:first-of-type     {width: 30%}
-  .frame-type-table.frame-layout-1003  td:last-of-type      {width: 70%}
+  .frame-layout-1003  td:first-of-type     {width: 30%}
+  .frame-layout-1003  td:last-of-type      {width: 70%}
   
-  .frame-type-table.frame-layout-1004  td:first-of-type     {width: 40%}
-  .frame-type-table.frame-layout-1004  td:last-of-type      {width: 60%}
+  .frame-layout-1004  td:first-of-type     {width: 40%}
+  .frame-layout-1004  td:last-of-type      {width: 60%}
   
-  .frame-type-table.frame-layout-1005  td                   {width: 50%}
+  .frame-layout-1005  td                   {width: 50%}
   
-  .frame-type-table.frame-layout-1006  td:first-of-type     {width: 60%}
-  .frame-type-table.frame-layout-1006  td:last-of-type      {width: 40%}
+  .frame-layout-1006  td:first-of-type     {width: 60%}
+  .frame-layout-1006  td:last-of-type      {width: 40%}
   
-  .frame-type-table.frame-layout-1007  td:first-of-type     {width: 70%}
-  .frame-type-table.frame-layout-1007  td:last-of-type      {width: 30%}
+  .frame-layout-1007  td:first-of-type     {width: 70%}
+  .frame-layout-1007  td:last-of-type      {width: 30%}
   
-  .frame-type-table.frame-layout-1008  td:first-of-type     {width: 80%}
-  .frame-type-table.frame-layout-1008  td:last-of-type      {width: 20%}
+  .frame-layout-1008  td:first-of-type     {width: 80%}
+  .frame-layout-1008  td:last-of-type      {width: 20%}
   
-  .frame-type-table.frame-layout-1009  td:first-of-type     {width: 90%}
-  .frame-type-table.frame-layout-1009  td:last-of-type      {width: 10%}
+  .frame-layout-1009  td:first-of-type     {width: 90%}
+  .frame-layout-1009  td:last-of-type      {width: 10%}
   
-  .frame-type-table.frame-layout-1010  td:first-of-type     {width: 20%}
-  .frame-type-table.frame-layout-1010  td:nth-of-type(2)    {width: 40%}
-  .frame-type-table.frame-layout-1010  td:last-of-type      {width: 40%}
+  .frame-layout-1010  td:first-of-type     {width: 20%}
+  .frame-layout-1010  td:nth-of-type(2)    {width: 40%}
+  .frame-layout-1010  td:last-of-type      {width: 40%}
   
-  .frame-type-table.frame-layout-1011  td                   {width: 33.3%}
+  .frame-layout-1011  td                   {width: 33.3%}
   
-  .frame-type-table.frame-layout-1012  td:first-of-type     {width: 40%}
-  .frame-type-table.frame-layout-1012  td:nth-of-type(2)    {width: 30%}
-  .frame-type-table.frame-layout-1012  td:last-of-type      {width: 30%}
+  .frame-layout-1012  td:first-of-type     {width: 40%}
+  .frame-layout-1012  td:nth-of-type(2)    {width: 30%}
+  .frame-layout-1012  td:last-of-type      {width: 30%}
   
-  .frame-type-table.frame-layout-1013  td:first-of-type     {width: 50%}
-  .frame-type-table.frame-layout-1013  td:nth-of-type(2)    {width: 25%}
-  .frame-type-table.frame-layout-1013  td:last-of-type      {width: 25%}
+  .frame-layout-1013  td:first-of-type     {width: 50%}
+  .frame-layout-1013  td:nth-of-type(2)    {width: 25%}
+  .frame-layout-1013  td:last-of-type      {width: 25%}
   
-  .frame-type-table.frame-layout-1014  td:first-of-type     {width: 60%}
-  .frame-type-table.frame-layout-1014  td:nth-of-type(2)    {width: 20%}
-  .frame-type-table.frame-layout-1014  td:last-of-type      {width: 20%}
+  .frame-layout-1014  td:first-of-type     {width: 60%}
+  .frame-layout-1014  td:nth-of-type(2)    {width: 20%}
+  .frame-layout-1014  td:last-of-type      {width: 20%}
   
-  .frame-type-table.frame-layout-1015  td:first-of-type     {width: 80%}
-  .frame-type-table.frame-layout-1015  td:nth-of-type(2)    {width: 10%}
-  .frame-type-table.frame-layout-1015  td:last-of-type      {width: 10%}
+  .frame-layout-1015  td:first-of-type     {width: 80%}
+  .frame-layout-1015  td:nth-of-type(2)    {width: 10%}
+  .frame-layout-1015  td:last-of-type      {width: 10%}
   
-  .frame-type-table.frame-layout-1016  td                   {width: 25%}
+  .frame-layout-1016  td                   {width: 25%}
   
-  .frame-type-table.frame-layout-1017  td                   {width: 20%}
-  .frame-type-table.frame-layout-1017  td:first-of-type     {width: 40%} 
+  .frame-layout-1017  td                   {width: 20%}
+  .frame-layout-1017  td:first-of-type     {width: 40%} 
   
-  .frame-type-table.frame-layout-1018  td                   {width: 16%}
-  .frame-type-table.frame-layout-1018  td:first-of-type     {width: 50%} 
+  .frame-layout-1018  td                   {width: 16%}
+  .frame-layout-1018  td:first-of-type     {width: 50%} 
   
-  .frame-type-table.frame-layout-1019  td                   {width: 20%}
+  .frame-layout-1019  td                   {width: 20%}
   
-  .frame-type-table.frame-layout-1020  td                   {width: 15%}
-  .frame-type-table.frame-layout-1020  td:first-of-type     {width: 40%} 
+  .frame-layout-1020  td                   {width: 15%}
+  .frame-layout-1020  td:first-of-type     {width: 40%} 
   
-  .frame-type-table.frame-layout-1021  td                   {width: 10%}
-  .frame-type-table.frame-layout-1021  td:first-of-type     {width: 60%} 
+  .frame-layout-1021  td                   {width: 10%}
+  .frame-layout-1021  td:first-of-type     {width: 60%} 
   
-  .frame-type-table.frame-layout-1022  td                   {width: 10%}
-  .frame-type-table.frame-layout-1022  td:first-of-type     {width: 50%} 
+  .frame-layout-1022  td                   {width: 10%}
+  .frame-layout-1022  td:first-of-type     {width: 50%} 
   
-  .frame-type-table.frame-layout-1023  td                   {width: 15%}
-  .frame-type-table.frame-layout-1023  td:first-of-type     {width: 25%} 
+  .frame-layout-1023  td                   {width: 15%}
+  .frame-layout-1023  td:first-of-type     {width: 25%} 
   
-  .frame-type-table.frame-layout-1024  td                   {width: 10%}
-  .frame-type-table.frame-layout-1024  td:first-of-type     {width: 40%} 
+  .frame-layout-1024  td                   {width: 10%}
+  .frame-layout-1024  td:first-of-type     {width: 40%} 
   
-  .frame-type-table.frame-layout-1025  td                   {width: 10%}
-  .frame-type-table.frame-layout-1025  td:first-of-type     {width: 30%} 
+  .frame-layout-1025  td                   {width: 10%}
+  .frame-layout-1025  td:first-of-type     {width: 30%} 
   
-  .frame-type-table.frame-layout-1026  td                   {width: 10%}
-  .frame-type-table.frame-layout-1026  td:first-of-type     {width: 20%} 
+  .frame-layout-1026  td                   {width: 10%}
+  .frame-layout-1026  td:first-of-type     {width: 20%} 
   
-  .frame-type-table.frame-layout-1027  td                   {width: 10%}
+  .frame-layout-1027  td                   {width: 10%}
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
+
