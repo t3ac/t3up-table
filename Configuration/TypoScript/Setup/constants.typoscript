@@ -1,10 +1,4 @@
 page{    
-   scss {
-      
-      # cat =t3up: scss/t3upextensions/203;  type =string; label =t3upTable - Scss
-      scssT3upTable = EXT:t3up_table/Resources/Public/Sass/_t3upTable.scss
-   }
-      
     files {
         # cat = t3up: files//401;  type =options[,active]; label = LLL:EXT:t3up_table/Resources/Private/Language/locallang_constants.xlf:tablesorter
         tablesorter                  =  active
