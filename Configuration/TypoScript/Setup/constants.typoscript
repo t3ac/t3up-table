@@ -1,8 +1,8 @@
 page{    
     files {
-        # cat = t3up: files//401;  type =options[,active]; label = LLL:EXT:t3up_table/Resources/Private/Language/locallang_constants.xlf:tablesorter
+        # cat = files/401;  type =options[,active]; label = LLL:EXT:t3up_table/Resources/Private/Language/locallang_constants.xlf:tablesorter
         tablesorter                  =  active
-        # cat = t3up: files//402;  type =options[,active]; label = LLL:EXT:t3up_table/Resources/Private/Language/locallang_constants.xlf:tablesorterstart
+        # cat = files/402;  type =options[,active]; label = LLL:EXT:t3up_table/Resources/Private/Language/locallang_constants.xlf:tablesorterstart
         tablesorterstart             =  active
 	}	
 }
