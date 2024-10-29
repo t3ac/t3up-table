@@ -3,18 +3,17 @@ lib.contentElement.templateRootPaths.17 = EXT:t3up_table/Resources/Private/Templ
 lib.contentElement.partialRootPaths.17  = EXT:t3up_table/Resources/Private/Templates/ContentElement/Partials/
 
 page.includeJSFooterlibs {
-
-    tablesorter                 		= EXT:t3up_table/Resources/Public/JavaScript/jquery.tablesorter.js
-    tablesorter.if.isTrue               = {$page.files.tablesorter}
-    tablesorter.async           		= 1 
+	tablesorter				= EXT:t3up_table/Resources/Public/JavaScript/jquery.tablesorter.js
+	tablesorter.if.isTrue			= {$page.files.tablesorter}
+	tablesorter.async			= 1 
     
-    tablesorterstart            		= EXT:t3up_table/Resources/Public/JavaScript/jquery.tablestart.js
-    tablesorterstart.if.isTrue          = {$page.files.tablesorterstart}  
-    tablesorterstart.async      		= 1 
+	tablesorterstart			= EXT:t3up_table/Resources/Public/JavaScript/jquery.tablestart.js
+	tablesorterstart.if.isTrue		= {$page.files.tablesorterstart}  
+	tablesorterstart.async      		= 1 
 }
 
 page.includeCSS{
-   	t3up_table                            =  EXT:t3up_table/Resources/Public/Sass/_t3upTable.scss
-    t3up_table.linenumber                 =  true    
+	t3up_table                            =  EXT:t3up_table/Resources/Public/Sass/_t3upTable.scss
+    	t3up_table.linenumber                 =  true    
 	t3up_table.outputStyle                =  compressed 
 }
