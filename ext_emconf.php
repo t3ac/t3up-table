@@ -8,7 +8,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title'            => 'T3UP - Table',
     'description'      => 'Table Extension for the t3up-package',
-    'version'          => '11.0.0a',
+    'version'          => '11.0.01',
     'state'            => 'stable',
     'category'         => 'templates',
     'author'           => 'Michael Lang',
