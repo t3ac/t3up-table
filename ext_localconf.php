@@ -11,6 +11,6 @@ call_user_func(static function () {
     	ExtensionManagementUtility::addTypoScript(
        		't3up-table',
         	'setup',
-       	 	"@import 'EXT:t3up-table/Configuration/TypoScript/setup.typoscript'",
+       	 	"@import 'EXT:t3up-table/Configuration/TypoScript/Setup/setup.typoscript'",
     	);
 });
