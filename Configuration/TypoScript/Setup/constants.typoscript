@@ -4,3 +4,19 @@ page{
         	tablesorter                  =  1
 	}	
 }
+
+
+# customcategory=colors=T3up: Colors
+
+# customsubcategory=table=table colors
+
+page.color {
+	# cat= colors/table/01; type= color; label= Line color
+	tableLineColor			= #bababa
+	# cat= colors/table/02; type= color; label= Header line color	
+	tableHeaderLineColor		= #787878
+	# cat= colors/table/03; type= color; label= Header background color		
+	tableHeader			= #efefef
+	# cat= colors/table/03; type= color; label= Header textcolor
+	tableHeaderColor		= 000
+}	
