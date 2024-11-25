@@ -1,6 +1,6 @@
 page{    
     files {
-        # cat = files/401;  type =options[,active]; label = LLL:EXT:t3up_table/Resources/Private/Language/locallang_constants.xlf:tablesorter
-        	tablesorter                  =  active
+        # cat = files/401;  type =boolean; label = LLL:EXT:t3up_table/Resources/Private/Language/locallang_constants.xlf:tablesorter
+        	tablesorter                  =  1
 	}	
 }
