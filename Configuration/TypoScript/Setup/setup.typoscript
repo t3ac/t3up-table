@@ -1,6 +1,6 @@
 # Fluid_styled_content Elements ###########################################################
-lib.contentElement.templateRootPaths.17 = EXT:t3up_table/Resources/Private/Templates/ContentElement/Templates/
-lib.contentElement.partialRootPaths.17  = EXT:t3up_table/Resources/Private/Templates/ContentElement/Partials/
+lib.contentElement.templateRootPaths.17 	= EXT:t3up_table/Resources/Private/Templates/ContentElement/Templates/
+lib.contentElement.partialRootPaths.17  	= EXT:t3up_table/Resources/Private/Templates/ContentElement/Partials/
 
 page.includeJSFooterlibs {
 	tablesorter				= EXT:t3up_table/Resources/Public/JavaScript/jquery.tablesorter.js
@@ -13,7 +13,7 @@ page.includeJSFooterlibs {
 }
 
 page.includeCSS{
-	t3up_table                            =  EXT:t3up_table/Resources/Public/Sass/_t3upTable.scss
-    	t3up_table.linenumber                 =  true    
-	t3up_table.outputStyle                =  compressed 
+	t3up_table                            	=  EXT:t3up_table/Resources/Public/Sass/_t3upTable.scss
+    	t3up_table.linenumber                 	=  true    
+	t3up_table.outputStyle                	=  compressed 
 }
